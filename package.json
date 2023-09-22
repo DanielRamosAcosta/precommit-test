@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "postinstall": "echo 'npm run test' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit"
   },
   "author": "",
   "license": "ISC",
